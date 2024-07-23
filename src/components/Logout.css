@@ -1,0 +1,49 @@
+/* src/Logout.css */
+body {
+    margin: 0;
+    font-family: "Poppins", sans-serif; /* Use Poppins font */
+    background-color: #f5f5f5;
+}
+
+.logout-container {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    min-height: 100vh;
+}
+
+.logout-form {
+    background: white;
+    padding: 2rem;
+    border-radius: 8px;
+    box-shadow: 0 4px 8px green;
+    width: 100%;
+    max-width: 400px;
+    text-align: center;
+}
+
+.logout-form h2 {
+    text-align: center;
+    margin-bottom: 1.5rem;
+    font-size: 1.5rem;
+    color: #333;
+}
+
+.logout-button {
+    width: 100%;
+    padding: 10px;
+    border: 1px solid #3C9C86; /* Light green border */
+    border-radius: 5px;
+    background-color: #2f855a; /* bg-green-700 */
+    color: black;
+    font-size: 16px;
+    cursor: pointer;
+    transition: background 0.3s, box-shadow 0.3s;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.2); /* Shadow */
+}
+
+.logout-button:hover {
+    background-color: #276749; /* Darker green for hover effect */
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.3); /* Larger shadow on hover */
+    color: white; /* Change text color on hover */
+}

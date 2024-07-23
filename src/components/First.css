@@ -1,0 +1,82 @@
+/* src/First.css */
+.home-container {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 100vh;
+    background: rgba(56, 142, 60, 0.85); /* green-700 with 85% opacity */
+    color: black;
+    font-family: 'Arial', sans-serif;
+    padding: 20px;
+    text-align: center;
+}
+
+.home-content {
+    max-width: 600px;
+    margin-right: 20px;
+    animation: fadeIn 2s ease-in-out;
+}
+
+.home-content h1 {
+    font-size: 3em;
+    margin-bottom: 20px;
+    color: white;
+    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5);
+}
+
+.home-content p {
+    font-size: 1.2em;
+    margin-bottom: 40px;
+    line-height: 1.5;
+    color: #f1f1f1;
+}
+
+.home-buttons {
+    display: flex;
+    justify-content: center;
+    gap: 20px;
+}
+
+.home-button {
+    background-color: #fff;
+    color: #388e3c; /* green-700 */
+    border: none;
+    padding: 15px 30px;
+    font-size: 1em;
+    font-weight: bold;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s, color 0.3s, transform 0.3s;
+}
+
+.home-button:hover {
+    background-color: #388e3c; /* green-700 */
+    color: #fff;
+    transform: scale(1.1);
+}
+
+.home-image {
+    display: none;
+}
+
+.home-image img {
+    max-width: 100%;
+    border-radius: 10px;
+    animation: fadeIn 2s ease-in-out;
+}
+
+@media (min-width: 768px) {
+    .home-image {
+        display: block;
+    }
+}
+
+/* Animations */
+@keyframes fadeIn {
+    from {
+        opacity: 0;
+    }
+    to {
+        opacity: 1;
+    }
+}
